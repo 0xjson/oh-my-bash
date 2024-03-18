@@ -31,8 +31,8 @@ alias python="python3.11"
 #alias burp="java -javaagent:/mnt/c/tools/burp/BurpSuiteLoader_v2022.8.jar -Xmx16384m --illegal-access=permit -noverify -Djava.net.preferIPv4Stack=true -jar /mnt/c/tools/burp/burpsuite_pro_v2022.8.3.jar"
 
 fireprox(){
-	access_key="AKIAS6YE2B5UKHB3OUPY"
-	secret_access_key="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"
+	access_key=$ACCESS_KEY
+	secret_access_key=$SECRET_ACCESS_KEY
 	if [ "act" == $1 ];
 	then
 		cd ~/tools/fireprox
