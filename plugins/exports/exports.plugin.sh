@@ -32,8 +32,11 @@ export GPG_TTY=$(tty)
 ### rust export
 export PATH="$PATH:$HOME/.cargo/bin"
 
-### golang export
-#GOPATH="/root/go"
-#GOROOT="/usr/local/go"
-#export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
-#export GO111MODULE="on"
+## golang export
+GOPATH="/root/go"
+GOROOT="/usr/local/go"
+export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
+export GO111MODULE="on"
+
+## OSH directory ##
+export OSH="$HOME/GitProjects/dotfiles/oh-my-bash"
