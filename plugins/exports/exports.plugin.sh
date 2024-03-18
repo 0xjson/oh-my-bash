@@ -7,11 +7,6 @@
 #
 #################################################
 ## export variable
-export WPSCAN_TOKEN="4lBVkIRYClv2wZZQQvHsxQeJLEUHErR6QXYQrAaYPDs"
-export CHAOS_API_KEY="d99e24daa88ea99bf1f9d992022ab50a2ccfb64b7b3b2ca580a73ec0e3d005c3" #chaos-api-key
-export GITHUB_TOKEN="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"
-export GITHUB_PAT="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"
-export GITLAB_TOKEN="glpat-qzUAkyX7WYsAtxWgBVCj"
 export osm_url="https://osm.aquilonix.xyz/"
 export osm_wsurl="https://osm.aquilonix.xyz/not-a-list-of-targets.txt"
 export EDITOR="/usr/bin/nvim"
@@ -42,9 +37,6 @@ export PATH="$PATH:$HOME/.cargo/bin"
 #GOROOT="/usr/local/go"
 #export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 #export GO111MODULE="on"
-
-## DIGITALOCEAN API TOKEN
-DO_TOKEN="dop_v1_4263b5d13b09b193a00d996f426d8305abb90315643d48711eceb62ae3875105"
 
 ## ssh-agent for github
 # Start SSH Agent
