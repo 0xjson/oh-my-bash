@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#alias ls="exa"
+alias ls="exa"
 alias :q="exit"
 alias vi="nvim"
 alias bashconfig="vi ~/.bashrc"
@@ -23,9 +23,3 @@ alias burpkill="kill $(ps aux | grep -v grep | grep socat | head -n 2  |awk -F' 
 alias python="python3.11"
 #alias pip="pip3.11"
 
-#### proxy
-#alias proxyon="export http_proxy='http://lum-auth-token:XkyJMuhXtnLcbKEhdV2z4dgm8Y2KTdjC@188.166.215.11:24000';export https_proxy='https://lum-auth-token:XkyJMuhXtnLcbKEhdV2z4dgm8Y2KTdjC@188.166.215.11:24000'"
-#alias proxyoff="unset http_proxy;unset https_proxy"
-#
-#alias burpsuite="java -javaagent:/mnt/c/tools/burp/BurpSuiteLoader_v2022.8.jar -Xmx16384m --illegal-access=permit -noverify -Dfile.encoding=utf-8 -Djava.net.preferIPv4Stack=true -jar /mnt/c/tools/burp/burpsuite_pro_v2022.8.3.jar"
-#alias burp="java -javaagent:/mnt/c/tools/burp/BurpSuiteLoader_v2022.8.jar -Xmx16384m --illegal-access=permit -noverify -Djava.net.preferIPv4Stack=true -jar /mnt/c/tools/burp/burpsuite_pro_v2022.8.3.jar"
