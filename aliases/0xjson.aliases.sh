@@ -29,30 +29,3 @@ alias python="python3.11"
 #
 #alias burpsuite="java -javaagent:/mnt/c/tools/burp/BurpSuiteLoader_v2022.8.jar -Xmx16384m --illegal-access=permit -noverify -Dfile.encoding=utf-8 -Djava.net.preferIPv4Stack=true -jar /mnt/c/tools/burp/burpsuite_pro_v2022.8.3.jar"
 #alias burp="java -javaagent:/mnt/c/tools/burp/BurpSuiteLoader_v2022.8.jar -Xmx16384m --illegal-access=permit -noverify -Djava.net.preferIPv4Stack=true -jar /mnt/c/tools/burp/burpsuite_pro_v2022.8.3.jar"
-
-fireprox(){
-	access_key=$ACCESS_KEY
-	secret_access_key=$SECRET_ACCESS_KEY
-	if [ "act" == $1 ];
-	then
-		cd ~/tools/fireprox
-		source bin/activate
-	fi
-
-	if [ "deact" == $1 ];
-	then
-		deactivate
-	fi
-
-	if [ "list" == $1 ];
-	then
-		cd ~/tools/fireprox
-		python fire.py --access_key $access_key --secret_access_key $secret_access_key --command list --region ap-southeast-1
-	fi
-
-	if [ "create" == $1 ];
-	then
-		cd ~/tools/fireprox
-		python fire.py --access_key $access_key --secret_access_key $secret_access_key --command create --region ap-southeast-1 --url $2
-	fi
-}
