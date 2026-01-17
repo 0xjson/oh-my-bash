@@ -7,7 +7,7 @@
 #
 #################################################
 ## export variable
-#export osm_url="https://osm.aquilonix.xyz/"
+#erootxport osm_url="https://osm.aquilonix.xyz/"
 #export osm_wsurl="https://osm.aquilonix.xyz/not-a-list-of-targets.txt"
 #export EDITOR="/usr/bin/nvim"
 #export LC_CTYPE="en_US.UTF-8"
@@ -29,14 +29,20 @@ export TZ="/usr/share/zoneinfo/Asia/Singapore"
 # export tty for gpg
 export GPG_TTY=$(tty)
 
+## LOCAL PATH ##
+export PATH="$PATH:$HOME/.local/bin"
+
 ### rust export
-#export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
 
 ## golang export
-#GOPATH="/root/go"
-#GOROOT="/usr/local/go"
-#export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
-#export GO111MODULE="on"
+GOPATH="/home/json/go"
+GOROOT="/usr/local/go"
+export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
+export GO111MODULE="on"
 
-## OSH directory ##
-#export OSH="$HOME/GitProjects/dotfiles/oh-my-bash"
+## chaos ##
+export PDCP_API_KEY="f8426bcc-6a39-4921-a36f-16778f5d66d1"
+
+## fix wsl2 xdg-utils ##
+#export BROWSER=wslview
